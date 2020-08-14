@@ -8,10 +8,12 @@ print(a)
 print(issubclass(type(a), abc.MutableSequence))
 
 print("\n")
+# Check the Array-TypeCode and Byte-Size of Element.
 print(a.typecode)
 print(a.itemsize)
 
 print("\n")
+# Check the number of Element and Array-Reference.
 print(a.buffer_info())
 print(a[0])
 print(a[-1])
