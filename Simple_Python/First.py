@@ -10,3 +10,6 @@ abc.Sequence.__abstractmethods__
 # Check Abstract-Methods of MutableSequence Class.
 abc.MutableSequence.__abstractmethods__
 
+# Check the Relationship of Inheritance
+# between List-Class and Sequence-Class.
+issubclass(list, abc.Sequence)
