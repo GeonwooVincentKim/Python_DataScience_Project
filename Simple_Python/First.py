@@ -16,3 +16,16 @@ issubclass(list, abc.Sequence)
 
 # Check the Relationship of Inheritance
 # between List-Class and Mutable-Sequence-Class.
+issubclass(list, abc.MutableSequence)
+
+x = list((1, 2, 3, 'a'))
+print(x)
+
+# Creation
+isinstance(x, list)
+print(x[0], x[-1])
+
+try:
+    print(x[10])
+except Exception as e:
+    print(e)
