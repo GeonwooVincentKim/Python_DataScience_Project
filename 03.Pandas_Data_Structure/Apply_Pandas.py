@@ -8,4 +8,6 @@ print("s.shape : {0}, number of dimension of variable 's' : {1}, s.size : {2}".f
     s.shape, s.ndim, s.size
 ))
 
+# Available search Label.
 print(s[0], s['a'])
+print(s[0:2])
