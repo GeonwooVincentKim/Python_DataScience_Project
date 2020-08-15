@@ -11,3 +11,6 @@ print("s.shape : {0}, number of dimension of variable 's' : {1}, s.size : {2}".f
 # Available search Label.
 print(s[0], s['a'])
 print(s[0:2])
+print(s['a': 'c'])
+
+sv = s['a': 'c']
