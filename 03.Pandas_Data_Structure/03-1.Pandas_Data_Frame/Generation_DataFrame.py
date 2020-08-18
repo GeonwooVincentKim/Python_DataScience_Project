@@ -16,3 +16,12 @@ type(df.values)
 print(df.index)
 print(df.columns)
 
+print(df.shape, df.ndim, df.size)
+
+# The difference between Series
+# and index operation is treated by heat.
+try:
+    print(df[0])
+
+except Exception as e:
+    print(e)
