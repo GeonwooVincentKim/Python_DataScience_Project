@@ -29,3 +29,9 @@ except Exception as e:
 print(df['a'])
 print(df.loc['a'])  # Search rows based on 'loc' indexer.
 print(df.loc['a', :])
+
+print(df.loc['a':, 'b':, 'c'])
+
+dfv = df.loc['a':, 'b':, 'c']
+dfv['b'] = 100
+print(dfv)
