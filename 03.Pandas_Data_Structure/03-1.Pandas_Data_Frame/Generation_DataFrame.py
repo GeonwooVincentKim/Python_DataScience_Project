@@ -25,3 +25,7 @@ try:
 
 except Exception as e:
     print(e)
+
+print(df['a'])
+print(df.loc(['a']))
+print(df.loc['a', :])
