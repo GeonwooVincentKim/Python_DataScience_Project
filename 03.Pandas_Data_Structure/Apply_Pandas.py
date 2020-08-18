@@ -35,4 +35,3 @@ try:
     s[5] = 300
 except Exception as e:
     print(e)
-
