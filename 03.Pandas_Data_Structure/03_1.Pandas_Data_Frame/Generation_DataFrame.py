@@ -1,4 +1,5 @@
 import pandas as pd
+import numpy as np
 
 # Label of 'rows' includes 'index parameter'.
 # Label of 'columns' includes 'columns parameter'.
@@ -33,3 +34,24 @@ print(df.loc['a', :])
 print(df.loc['a':, 'b': 'c'])
 
 dfv = df.loc['a':, 'b': 'c']
+
+
+np.may_share_memory(dfv, df)
+dfv['b'] = 100
+print(dfv)
+print(df)
+
+# Available to search all of data that includes
+# Column's and Row's data.
+print(df.iloc[0])
+
+# Set One-Row and One-Columns.
+print(df.iloc[0, 0])
+
+s = df.iloc[:, 0]
+print(s)
+
+# Slice results inquired by indexer
+# also provide View.
+np.may_share_memory(s, df)
+
