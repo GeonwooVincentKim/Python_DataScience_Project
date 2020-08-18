@@ -53,5 +53,6 @@ print(s)
 
 # Slice results inquired by indexer
 # also provide View.
-np.may_share_memory(s, df)
+print(np.may_share_memory(s, df))
+
 
