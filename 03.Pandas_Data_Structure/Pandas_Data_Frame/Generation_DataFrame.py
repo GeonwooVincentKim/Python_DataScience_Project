@@ -30,6 +30,6 @@ print(df['a'])
 print(df.loc['a'])  # Search rows based on 'loc' indexer.
 print(df.loc['a', :])
 
-print(df.loc['a':, 'b':, 'c'])
+print(df.loc['a':, 'b': 'c'])
 
-dfv = df.loc['a':, 'b':, 'c']
+dfv = df.loc['a':, 'b': 'c']
