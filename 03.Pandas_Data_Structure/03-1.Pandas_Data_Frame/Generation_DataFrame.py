@@ -9,4 +9,10 @@ df = pd.DataFrame(
     columns=list('abcd')
 )
 
+print(df)
+print(df.values)
+type(df.values)
+
+print(df.index)
+print(df.columns)
 
