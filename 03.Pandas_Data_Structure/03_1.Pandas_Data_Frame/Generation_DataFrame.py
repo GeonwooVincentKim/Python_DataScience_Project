@@ -63,3 +63,8 @@ df_ = pd.DataFrame(data=data, columns=columns)
 # Check the data-format of Dataframe
 # as 'dtype' attribute.
 print(df_.dtypes)
+
+# Set Column of 'A' as 'str',
+# and then set other Colunm of 'B' as 'np.int32'.
+df_c = df_.astype({'A': str, 'B': np.int32})
+
