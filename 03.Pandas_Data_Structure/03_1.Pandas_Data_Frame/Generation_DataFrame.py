@@ -59,3 +59,7 @@ print(np.may_share_memory(s, df))
 data = [[1, 3], [4, 5]]
 columns = ['A', 'B']
 df_ = pd.DataFrame(data=data, columns=columns)
+
+# Check the data-format of Dataframe
+# as 'dtype' attribute.
+print(df_.dtypes)
